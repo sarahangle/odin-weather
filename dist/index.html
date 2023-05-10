@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    Hi!
+    <header>
+        <div id="logo">WEATHER</div>
+        <div id="non-logo">
+            <div class="toggle-w-labels" id="units-selector">
+                <div class="toggle-label toggle-label-left">&deg;F</div>
+                <label class="toggle">
+                    <input type="checkbox" class="toggle-checkbox" id="units-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <div class="toggle-label toggle-label-right">&deg;C</div>
+            </div>
+            <form id="location-form">
+                <input id="location-text" type="text" placeholder="Location...">
+                <button id="location-search-btn" class="material-symbols-outlined">search</button>
+            </form>
+        </div>
+    </header>
+    <div id="content">
+        <div id="current"></div>
+        <div id="forecast"></div>
+    </div>
 </body>
 <script src="./main.js"></script>
 </html>
